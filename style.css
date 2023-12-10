@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Kalnia:wght@400;500;700&family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', 'Roboto',  'Kalnia', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.image{
+    height: 450px;
+    object-fit: contain;
+    width: 50%;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 450px;
+    padding: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.perfume{
+    font-weight: 600;
+    opacity: 0.6;
+    letter-spacing: 2px;
+    margin: 8px 0;
+}
+.brand{
+    font-family: 'Kalnia', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+.paragraph{
+    font-size: 18px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.disc_price{
+    font-size: 40px;
+    font-weight: 900px;
+    color: rgb(5, 131, 131);
+}
+.fullprice{
+    align-self: center;
+    text-decoration: line-through;
+}
+.button{
+    background-color: rgb(5, 131, 131);
+    padding: 12px 14px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 300ms;
+}
+.cart{
+    color: white;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: rgb(4, 94, 94);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media(max-width: 620px){
+    .card{
+        flex-direction: column;
+        height: 900px;
+    }
+    .image{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 12px;
+    }
+    .description{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+}
